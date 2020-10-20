@@ -1,0 +1,29 @@
+h1{
+    font-size: 65px;
+    color: orange;
+}
+
+ul{
+    background-color: orangered;
+}
+
+.list_p-Style{
+    background-color: burlywood;
+}
+
+h1{
+    font-family: sans-serif;
+    font-style: italic;
+    line-height: 100px;
+    text-align: end;
+    text-decoration: overline;
+}
+
+p{
+    font-weight: 600;
+    font-size: 3em;
+}
+
+body{
+    font-size: 16px;
+}
