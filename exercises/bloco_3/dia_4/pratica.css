@@ -1,9 +1,32 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .title-stm {
-  background-color: #f5f5f5; 
+  background-color: purple;
+  border-bottom: 1px solid; 
 }
 
 .title-stm h1 {
   color: gray;
   text-align: center;
   padding: 40px;
+}
+
+.navigation {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.navigation li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+.navigation li a {
+  color: gray;
+  text-decoration: none;
 }
