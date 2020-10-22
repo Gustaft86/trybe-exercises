@@ -15,18 +15,22 @@
   padding: 40px;
 }
 
-.navigation {
+.nav-style {
   background-color: #f5f5f5;
   text-align: center;
 }
 
-.navigation li {
+.nav-style li {
   list-style-type: none;
   display: inline-block;
   padding: 20px;
 }
 
-.navigation li a {
+.nav-style li a {
   color: gray;
   text-decoration: none;
+}
+
+.main-section span {
+  font-style: italic;
 }
