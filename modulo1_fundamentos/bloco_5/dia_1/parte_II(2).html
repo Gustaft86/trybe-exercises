@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h2 id="page-title">Título</h2>
+    <p id="paragraph" class="paragraph-style">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="second-paragraph" class="paragraph-style">Segundo parágrafo!</p>
+
+    <script>
+      var paragraph = document.querySelector("#paragraph");
+      paragraph.style.color = "red";
+   
+      document.querySelector("#page-title").innerText = "Como se fosse a primeira vez";
+      
+      var secondParagraph = document.querySelector("#second-paragraph");
+      secondParagraph.innerText = "Um filme de comédia romântica e drama estadunidense de 2004, dirigido por Peter Segal, escrito por George Wing e estrelado por Adam Sandler e Drew Barrymore ao lado de Blake Clark, Rob Schneider, Sean Astin e Dan Aykroyd.";
+      secondParagraph.style.color = "orange";
+
+      var subTitle = document.querySelector("#subtitle");
+      subTitle.innerText = "Sinopse";
+      subTitle.style.color = "purple"
+
+      var paragraphs = document.querySelectorAll(".paragraph-style");
+      paragraphs[0].style.color =  "yellow";
+
+      console.log(document.querySelector("h4"));
+    </script>
+  </body>
+</html>
