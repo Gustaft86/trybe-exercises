@@ -10,7 +10,7 @@ for(let fixo = 0; fixo < numbers.length; fixo += 1) {
       fixo = movel-1;
       movel = numbers.length;
     } 
-    else if (movel == 9) {
+    else if (movel == numbers.length-1) {
       maior = numbers[fixo];
       fixo = numbers.length;
     }
