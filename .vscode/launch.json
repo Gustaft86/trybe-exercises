@@ -11,7 +11,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/modulo1_fundamentos/bloco_4/dia_3/exercicio3.js"
+      "program": "${file}"
     }
   ]
 }
