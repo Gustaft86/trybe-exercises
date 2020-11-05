@@ -118,18 +118,29 @@
       subTitulo3.className = "description";
 
       //let ondeApagar = document.querySelector("body").firstElementChild.nextElementSibling.nextElementSibling;
-      let ondeApagar = document.querySelector(".main-content");
-      console.log(ondeApagar);
+      let ondeApagarMain = document.querySelector(".main-content");
+      console.log(ondeApagarMain);
       //let apagaElementoDir = document.getElementById("esquerda");
-      let apagaElementoDir = document.querySelector(".left-content");
-      console.log(apagaElementoDir);
-      ondeApagar.removeChild(apagaElementoDir);
+      let apagaElementoDirMain = document.querySelector(".left-content");
+      console.log(apagaElementoDirMain);
+      ondeApagarMain.removeChild(apagaElementoDirMain);
       
       elementoDireita.style.marginRight = "auto";
 
       let paiElementoCentral = document.querySelector(".center-content").parentElement;
       console.log(paiElementoCentral);
       paiElementoCentral.style.background = "blue";
+
+      let ondeApagarUl = document.querySelector("ul");
+      console.log(ondeApagarUl);
+      let apagaElementoUlDez = document.querySelector("ul").lastElementChild;
+      console.log(apagaElementoUlDez);
+      ondeApagarUl.removeChild(apagaElementoUlDez);
+
+      let apagaElementoUlNove = document.querySelector("ul").lastElementChild;
+      console.log(apagaElementoUlNove);
+      ondeApagarUl.removeChild(apagaElementoUlNove);
+
     </script>
   </body>
 </html>
