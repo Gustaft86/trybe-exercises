@@ -63,6 +63,7 @@
 
       let elementoPrincipal = document.createElement("div");
       elementoPrincipal.className = "main-content";
+      elementoPrincipal.id = "principal"
       document.querySelector("body").appendChild(elementoPrincipal);
 
 
@@ -75,6 +76,7 @@
 
       let elementoEsquerda = document.createElement("div");
       elementoEsquerda.className = "left-content";
+      elementoEsquerda.id = "esquerda";
       document.querySelector(".main-content").appendChild(elementoEsquerda);
 
       let elementoDireita = document.createElement("div");
@@ -116,6 +118,15 @@
       subTitulo1.className = "description";
       subTitulo2.className = "description";
       subTitulo3.className = "description";
+
+      //let ondeApagar = document.querySelector("body").firstElementChild.nextElementSibling.nextElementSibling;
+      let ondeApagar = document.querySelector(".main-content");
+      console.log(ondeApagar);
+      //let apagaElementoDir = document.getElementById("esquerda");
+      let apagaElementoDir = document.querySelector(".left-content");
+      console.log(apagaElementoDir);
+      ondeApagar.removeChild(apagaElementoDir);
+      
     </script>
   </body>
 </html>
