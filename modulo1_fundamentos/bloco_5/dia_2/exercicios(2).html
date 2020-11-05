@@ -63,7 +63,6 @@
 
       let elementoPrincipal = document.createElement("div");
       elementoPrincipal.className = "main-content";
-      elementoPrincipal.id = "principal"
       document.querySelector("body").appendChild(elementoPrincipal);
 
 
@@ -76,7 +75,6 @@
 
       let elementoEsquerda = document.createElement("div");
       elementoEsquerda.className = "left-content";
-      elementoEsquerda.id = "esquerda";
       document.querySelector(".main-content").appendChild(elementoEsquerda);
 
       let elementoDireita = document.createElement("div");
@@ -127,6 +125,7 @@
       console.log(apagaElementoDir);
       ondeApagar.removeChild(apagaElementoDir);
       
+      elementoDireita.style.marginRight = "auto";
     </script>
   </body>
 </html>
