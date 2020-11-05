@@ -70,6 +70,48 @@
       elementoCentral.className = "center-content";
       document.querySelector("div").appendChild(elementoCentral);
 
+      let paragraph = document.createElement("p");
+      document.querySelector(".center-content").appendChild(paragraph);
+
+      let elementoEsquerda = document.createElement("div");
+      elementoEsquerda.className = "left-content";
+      document.querySelector(".main-content").appendChild(elementoEsquerda);
+
+      let elementoDireita = document.createElement("div");
+      elementoDireita.className = "rigth-content";
+      document.querySelector(".main-content").appendChild(elementoDireita);
+
+      let imagem = document.createElement("img");
+      imagem.className = "small-image";
+      imagem.src = "https://picsum.photos/200";
+      imagem.alt = "foto";
+      document.querySelector(".left-content").appendChild(imagem);
+    
+      let listaNaoOrdenada = document.createElement("ul");
+      document.querySelector(".rigth-content").appendChild(listaNaoOrdenada);
+      
+      let lista = document.createElement("li");
+      var textNode = document.createTextNode("um");
+      lista.appendChild(textNode);
+      document.querySelector("ul").appendChild(lista);
+
+      
+      let num = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+      for (let i of num) {
+        let lista = document.createElement("li");
+        var textNode = document.createTextNode(i);
+        lista.appendChild(textNode);
+        document.querySelector("ul").appendChild(lista);
+      }
+
+      let subTitulo1 = document.createElement("h3");
+      let subTitulo2 = document.createElement("h3");
+      let subTitulo3 = document.createElement("h3");
+      document.querySelector(".main-content").appendChild(subTitulo1);
+      document.querySelector(".main-content").appendChild(subTitulo2);
+      document.querySelector(".main-content").appendChild(subTitulo3);
+      
+      
     </script>
   </body>
 </html>
