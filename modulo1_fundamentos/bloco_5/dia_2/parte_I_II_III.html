@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+  <script>
+    let where = document.querySelector("#elementoOndeVoceEsta");
+    console.log(where);
+
+    let whereToFather = document.querySelector("#elementoOndeVoceEsta").parentNode;
+    console.log(whereToFather);
+    whereToFather.style.color = "red";
+
+    let firstbornGrandson = document.querySelector("#primeiroFilhoDoFilho");
+    console.log(firstbornGrandson);
+    /* console.log(firstbornGrandson.innerHTML);
+    console.log(firstbornGrandson.innerText);
+    console.log(firstbornGrandson.textContent); */
+    firstbornGrandson.innerText = "Meu filho irá se chamar Geraldo";
+
+    let firstborn = document.querySelector("#pai").firstElementChild;
+    console.log(firstborn);
+
+    let whereToFirstborn = document.querySelector("#elementoOndeVoceEsta").previousElementSibling;
+    console.log(whereToFirstborn);
+
+    let text = document.querySelector("#elementoOndeVoceEsta").parentNode.innerText;
+    console.log(text);
+
+    let whereToThirdSon = document.querySelector("#elementoOndeVoceEsta").nextElementSibling;
+    console.log(whereToThirdSon);
+
+    let fatherToThirdSon = document.querySelector("#pai").firstElementChild.nextElementSibling.nextElementSibling;
+    console.log(fatherToThirdSon);
+
+    let brotherOfWhere = document.createElement("div");
+    brotherOfWhere.id = "irmaoOndeVoceEsta";
+    document.querySelector("#pai").appendChild(brotherOfWhere);
+    console.log(document.querySelector("#pai"));
+
+    let sonOfWhere = document.createElement("div");
+    sonOfWhere.id = "filhoOndeVoceEsta";
+    document.querySelector("#elementoOndeVoceEsta").appendChild(sonOfWhere);
+    console.log(document.querySelector("#elementoOndeVoceEsta"));
+  
+    let sonOfFirstbornGrandson = document.createElement("div");
+    sonOfFirstbornGrandson.id = "filhoPrimeiroFilhoDoFilho";
+    document.querySelector("#primeiroFilhoDoFilho").appendChild(sonOfFirstbornGrandson);
+    console.log(document.querySelector("#primeiroFilhoDoFilho"));
+
+    console.log(document.querySelector("#filhoPrimeiroFilhoDoFilho").parentElement.parentElement.nextElementSibling);
+  
+    let elementos = document.querySelectorAll("#pai div");
+    console.log(elementos);
+    
+    for(let index = 0; index < elementos.length; index += 1) {
+      let elemento = elementos[index];
+      let pai = document.querySelector("#pai");
+      pai.removeChild(elemento);
+    };
+    
+  </script>  
+</body>
+</html>
