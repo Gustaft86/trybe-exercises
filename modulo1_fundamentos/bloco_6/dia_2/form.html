@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Exercicio Dia 1</title>
+  <link rel="stylesheet" href="bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <form class="form" action="" method="GET" novalidate>
+    <fieldset class="fieldset">
+      <legend class="label">Dados Pessoais</legend>
+      <label class='label' for="texto-name">Nome</label>
+      <input class='input' type="text" name="nome" id="texto-name" maxlength="40" placeholder="Ex: Gustavo" required>
+      <br>
+      <label class='label' for="texto-email">E-mail</label>
+      <input class='input' type="email" name="email" id="texto-email" placeholder="Ex: gustavo@mail.com" max="50" required>
+      <br>
+      <label class='label' for="texto-cpf">CPF</label>
+      <input class='input' type="text" name="cpf" id="texto-cpf" placeholder="Ex: 333.333.333-03" maxlength="11" required>
+      <br>
+      <label class='label' for="texto-endereco">Endereço</label>
+      <input class='input' type="text" name="endereco" id="texto-endereco" placeholder="Ex: Rua: João Jolino, 10" maxlength="200" required>
+      <br>
+      <label class='label' for="texto-cidade">Cidade</label>
+      <input class='input' type="text" name="cidade" id="texto-cidade" placeholder="Ex: Oz" maxlength="28" required>
+      <br>
+      <label class='label' for="combobox-estados">Estado</label>
+      <select class='select' name="estados" id="combobox-estados" required>
+        <option value=""></option>
+      </select>
+      <br>
+      <div>  
+        <label class='label' for="tipo-endereco">Casa</label>
+        <input class='radio' type="radio" name="tipo-endereco" id="tipo-endereco_1" value="casa" required>
+        <label class='label' for="tipo-endereco">Apartamento</label>
+        <input class='radio' type="radio" name="tipo-endereco" id="tipo-endereco_2" value="apartamento" required>
+      </div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <legend class="label">Dados do seu último emprego</legend>
+      <label class='label' for="texto-resumo">Resumo do currículo</label>
+      <textarea class='textarea' name="resumo" id="texto-resumo" cols="" rows="10" maxlength="1000" required></textarea>
+      <br>
+      <label class='label' for="texto-cargo">Cargo</label>
+      <input class='input' type="text" class='textarea' name="cargo" id="texto-cargo" maxlength="40" required>
+      <br>
+      <label class='label' for="texto-descricap">Descrição do cargo</label>
+      <textarea class='textarea' name="descricao" id="texto-descricao" cols="" rows="5" maxlength="500" required></textarea>
+      <br>
+      <label class='label' for="texto-data">Data de início</label>
+      <input class='input' type="text" name="data" id="texto-data" minlength="10" maxlength="10" required>
+    </fieldset>
+    <fieldset id="submits" class="fieldset">
+      <button class='button' type="submit" id="submeter" class="button accept">Enviar</button>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
