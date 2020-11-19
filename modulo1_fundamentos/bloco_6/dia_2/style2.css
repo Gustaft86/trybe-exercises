@@ -1,0 +1,25 @@
+* {
+  margin: 0 100px 0 50px;
+  background-color: paleturquoise;
+}
+
+.fieldset {
+  margin-bottom: 50px;
+  border: solid grey;
+  padding: 20px;
+  max-width: 800px;
+  min-width: 500px;
+}
+
+label {
+  margin-top: 20px;
+}
+
+.input, .textarea {
+  max-width: 800px;
+  min-width: 400px;
+}
+
+select {
+  background-color: white;
+}

@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(15, 163, 107);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.date-content {
+  border-radius: 5px;
+  margin: 10px auto 20px auto;
+  padding: 20px;
+  background-color: white
+}
+
+.date-content legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(66, 66, 66);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.date-content label {
+  display: inline-block;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.date-content div label {
+  display: inline-block;
+  margin-top: 20px;
+  width: auto;
+}
+
+.date-content textarea {
+  resize: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#submits {
+  text-align: center;
+}
+
+.button {
+  width: 200px;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  font-size: 18px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: rgb(219, 219, 219);
+}
+
+.accept {
+  background-color: rgb(0, 206, 62);
+}
+
+.cleaner {
+  background-color: rgb(255, 99, 71);
+}
+
+#output-box {
+  margin: 10px;
+}
+
+.error {
+  border-color: tomato;
+}
+
+.date-content div {
+  text-transform: uppercase;
+  line-height: 25px;
+}
