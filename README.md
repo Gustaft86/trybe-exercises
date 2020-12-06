@@ -48,7 +48,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS avançado :hourglass_flowing_sand:
+##### Bloco 6: HTML & CSS avançado :white_check_mark:
 
 - [x] 6-1: _HTML & CSS - Forms_
 - [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
@@ -57,19 +57,19 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-5: _CSS Responsivo - Mobile First_
 - [X] 6-6: _[Projeto - PÃ¡gina inicial do Facebook]()_
 
-##### Bloco 7: JavaScript ES6 & Testes Unitários
+##### Bloco 7: JavaScript ES6 & Testes Unitários :white_check_mark:
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Testes unitÃ¡rios em JavaScript_
-- [ ] 7-4: _[Projeto - JavaScript Testes UnitÃ¡rios]()_
+- [X] 7-2: _JavaScript ES6 - Objects_
+- [X] 7-3: _Testes unitÃ¡rios em JavaScript_
+- [X] 7-4: _[Projeto - JavaScript Testes UnitÃ¡rios]()_
 
-##### Bloco 8: JavaScript ES6
+##### Bloco 8: JavaScript ES6 :hourglass_flowing_sand:
 
-- [ ] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
-- [ ] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [X] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [X] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
+- [X] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [ ] 8-5: _[Projeto - Zoo functions]()_
 
 ##### Bloco 9: Assincronicidade & Callbacks

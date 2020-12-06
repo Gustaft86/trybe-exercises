@@ -63,12 +63,41 @@ const books = [
   },
 ];
 
-function authorBornIn1947() {
-  // escreva aqui o seu código
-  /* Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
-Dica: use a função find . */
-  const bookAuthor = books.find(book => book.author.birthYear === 1947);
-  return bookAuthor.author.name;
+const expectedResult = false;
+
+
+function authorUnique() {
+  // escreva seu código aqui
+  let retorno = true;
+  const listOrderedByBirthYear = books.sort((a, b) => {
+    if (a.author.birthYear === b.author.birthYear) retorno = false;
+    return a.author.birthYear < b.author.birthYear ? -1 : a.author.birthYear > b.author.birthYear ? 1 : 0;
+  });
+  return retorno;
 }
 
-assert.strictEqual(authorBornIn1947(), 'Stephen King');
+
+/* function authorUnique() {
+  for (let index = 0; index < books.length; index += 1) {
+    const book = books[index];
+    for (let index2 = 0; index2 < books.length; index2 += 1) {
+      const someBook = books[index2];
+      if (someBook.author.birthYear === book.author.birthYear
+        && someBook.id !== book.id) {
+        return false;
+      }
+    }
+  }
+  return true;
+} */
+
+
+/* function authorUnique() {
+  return books.every((book)=>
+    !books.some((bookSome)=> 
+      (bookSome.author.birthYear === book.author.birthYear) && (bookSome.author.name !== book.author.name)
+  ));
+} */
+
+
+assert.strictEqual(authorUnique(), expectedResult);

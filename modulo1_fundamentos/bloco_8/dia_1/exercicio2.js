@@ -63,12 +63,19 @@ const books = [
   },
 ];
 
-function authorBornIn1947() {
+function smallerName() {
   // escreva aqui o seu código
-  /* Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
-Dica: use a função find . */
-  const bookAuthor = books.find(book => book.author.birthYear === 1947);
-  return bookAuthor.author.name;
+  
+  let nameBook = books[0].name;
+
+  books.forEach((book) => {
+    if (nameBook.length > book['name'].length) {
+      nameBook = book.name
+    }  
+  });
+ 
+  // Variável nameBook que receberá o valor do menor nome;
+  return nameBook;
 }
 
-assert.strictEqual(authorBornIn1947(), 'Stephen King');
+assert.strictEqual(smallerName(), 'Duna');

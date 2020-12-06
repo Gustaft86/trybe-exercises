@@ -63,12 +63,35 @@ const books = [
   },
 ];
 
-function authorBornIn1947() {
-  // escreva aqui o seu código
-  /* Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
-Dica: use a função find . */
-  const bookAuthor = books.find(book => book.author.birthYear === 1947);
-  return bookAuthor.author.name;
+const expectedResult = {
+  author: {
+    birthYear: 1948,
+    name: 'George R. R. Martin'
+  },
+  genre: 'Fantasia',
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  releaseYear: 1991
+};
+
+function getNamedBook() {
+    // escreva aqui o seu código
+  let newObj = {};
+  books.forEach((book) => {
+    if (book.name.length == 26) {
+      newObj =  {
+        author: {
+          birthYear: book.author.birthYear,
+          name: book.author.name,
+          }, 
+        genre: book.genre, 
+        id: book.id, 
+        name: book.name, 
+        releaseYear: book.releaseYear
+      };
+    }
+  });
+  return newObj;
 }
 
-assert.strictEqual(authorBornIn1947(), 'Stephen King');
+assert.deepStrictEqual(getNamedBook(), expectedResult);

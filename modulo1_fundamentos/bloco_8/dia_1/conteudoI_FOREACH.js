@@ -10,3 +10,4 @@ const showEmailList = (email) => {
 }
 
 emailListInData.forEach(showEmailList);
+console.log(emailListInData);
