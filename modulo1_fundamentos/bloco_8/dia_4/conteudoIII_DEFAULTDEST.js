@@ -11,5 +11,5 @@ const otherPerson = {
     nationality: "Russian"
 };
 
-console.log(nationality(otherPerson)); // Ivan is Russian
+console.log(nationality()); // Ivan is Russian
 console.log(nationality(person));
