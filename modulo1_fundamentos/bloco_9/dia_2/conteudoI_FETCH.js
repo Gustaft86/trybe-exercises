@@ -12,4 +12,4 @@ function verifiedFetch(url) {
   });
 }
 
-verifiedFetch('https://api.chucknorris.io/jokes/random?category=dev');
+console.log(verifiedFetch('https://api.chucknorris.io/jokes/random?category=dev'));
