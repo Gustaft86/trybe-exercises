@@ -8,19 +8,19 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos doDesenvolvimento Web :white_check_mark:
 
-##### Bloco 1: Introdução - Unix & Shell :white_check_mark:
+##### Bloco 1: Introdução - Unix & Shell :green_check_mark:
 
 - [x] 1-3: _Unix & Bash - Part 1_
 - [x] 1-4: _Unix & Bash - Part 2_
 - [x] 1-5: _Shell Script_
 
-##### Bloco 2: Git & GitHub :white_check_mark:
+##### Bloco 2: Git & GitHub :green_check_mark:
 
 - [x] 2-1: _O que é e para que serve?_
 - [x] 2-2: _Entendendo os comandos_
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdução - HTML & CSS :white_check_mark:
+##### Bloco 3: Introdução - HTML & CSS :green_check_mark:
 
 - [x] 3-1: _HTML & CSS - Estruturas de página_
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
@@ -28,7 +28,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-4: _HTML Semântico_
 - [x] 3-5: _[Projeto - HTML & CSS]()_
 
-##### Bloco 4: Introdução - JavaScript :white_check_mark:
+##### Bloco 4: Introdução - JavaScript :green_check_mark:
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
@@ -36,7 +36,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-4: _JavaScript - Objetos e funções_
 - [x] 4-5: _[Projeto - Playground Functions]()_
 
-##### Bloco 5: Introdução - JavaScript - Projetos :white_check_mark:
+##### Bloco 5: Introdução - JavaScript - Projetos :green_check_mark:
 
 - [x] 5-1: _JavaScript - DOM e seletores_
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
@@ -48,7 +48,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS avançado :white_check_mark:
+##### Bloco 6: HTML & CSS avançado :green_check_mark:
 
 - [x] 6-1: _HTML & CSS - Forms_
 - [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
@@ -57,14 +57,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-5: _CSS Responsivo - Mobile First_
 - [X] 6-6: _[Projeto - PÃ¡gina inicial do Facebook]()_
 
-##### Bloco 7: JavaScript ES6 & Testes Unitários :white_check_mark:
+##### Bloco 7: JavaScript ES6 & Testes Unitários :green_check_mark:
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Testes unitÃ¡rios em JavaScript_
 - [X] 7-4: _[Projeto - JavaScript Testes UnitÃ¡rios]()_
 
-##### Bloco 8: JavaScript ES6 :hourglass_flowing_sand:
+##### Bloco 8: JavaScript ES6 :green_check_mark:
 
 - [X] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
@@ -72,34 +72,34 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [ ] 8-5: _[Projeto - Zoo functions]()_
 
-##### Bloco 9: Assincronicidade & Callbacks
+##### Bloco 9: Assincronicidade & Callbacks :green_check_mark:
 
-- [ ] 9-1: _JavaScript AssÃ­ncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [X] 9-1: _JavaScript AssÃ­ncrono e Callbacks_
+- [X] 9-2: _JavaScript Promises_
+- [X] 9-3: _[Projeto - Carrinho de Compras]()_
 
-##### Bloco 10: Jest
+##### Bloco 10: Jest :green_check_mark:
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes AssÃ­ncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest AssÃ­ncrono e Mocking]()_
+- [X] 10-1: _Primeiros passos no Jest_
+- [X] 10-2: _Jest - Testes AssÃ­ncronos_
+- [X] 10-3: _Jest - Simulando comportamentos_
+- [X] 10-4: _[Projeto - Jest AssÃ­ncrono e Mocking]()_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 11: Introdução - React
+##### Bloco 11: Introdução - React :green_check_mark:
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [X] 11-1: _'Hello, world!' no React!_
+- [X] 11-2: _Componentes React_
+- [X] 11-3: _[Projeto - Movie Cards Library]()_
 
-##### Bloco 12: React
+##### Bloco 12: React :green_check_mark:
 
-- [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [X] 12-1: _Components com estado_
+- [X] 12-2: _Eventos e formulários no React_
+- [X] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
-##### Bloco 13: React
+##### Bloco 13: React :hourglass_flowing_sand:
 
 - [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
 - [ ] 13-2: _Ciclo de vida de componentes em React_
