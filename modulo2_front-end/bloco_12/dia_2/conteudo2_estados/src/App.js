@@ -14,7 +14,8 @@ class App extends React.Component {
   }
 
   /* A função de alterar o estado é definida no componente pai*/
-  handleClick() {
+  handleClick(event) {
+    console.log(event);
     this.setState((estadoAnterior) => ({
       numeroDeCliques: estadoAnterior.numeroDeCliques + 1,
     }));
