@@ -9,7 +9,9 @@ class Button extends React.Component {
     return (
     <button 
       type="button" 
-      onClick={handleClick}>
+      onClick={handleClick}
+      value='teste'
+    >
       Contar clique!
     </button>);
   }

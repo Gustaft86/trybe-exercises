@@ -1,5 +1,5 @@
 // Desafio 10
-function techList(arrayTec, name) {
+function techListe(arrayTec, name) {
   if (arrayTec.length === 0) {
     return 'Vazio!';
   }
