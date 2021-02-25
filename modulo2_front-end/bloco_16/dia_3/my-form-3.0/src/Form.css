@@ -1,0 +1,17 @@
+.form input, textarea {
+  display: block;
+  margin: 20px;
+}
+
+label {
+  margin-left: 20px;
+}
+
+fieldset {
+  width: 400px;
+  margin: 0 0 20px 20px;
+}
+
+select {
+  margin-left: 20px;
+}

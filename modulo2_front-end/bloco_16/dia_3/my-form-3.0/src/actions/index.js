@@ -1,0 +1,1 @@
+export { default as addName } from './addName'; // eslint-disable-line  
