@@ -81,8 +81,7 @@ class Form extends Component {
       <div>
         <h1>Estados e React - Cadastro de Curriculo</h1>
         <form className='form'>
-          <DadosPessoais />
-
+          <DadosPessoais {/*Preciso das informações no estado desse componente*/}/>
           <fieldset>
             <legend>Dados profissionais:</legend>
               <div className="container">
@@ -118,7 +117,11 @@ class Form extends Component {
                   onChange={this.handleChange}
                 />
               </div>
-            </fieldset>
+          </fieldset>
+            <input
+              type="submit"
+              onChange={this.handleSubmit}
+            />
         </form>
         <div className="container">
           <FormErrors formErrors={this.state.formErrors} />
@@ -128,4 +131,8 @@ class Form extends Component {
   }
 }
 
-export default Form;
+const mapDispatchToProps = ((dispatch) => ({
+  addData: (data) => dispatch(addNameAction(data))
+}));
+
+export default connect(null, mapDispatchToProps)(Form);
