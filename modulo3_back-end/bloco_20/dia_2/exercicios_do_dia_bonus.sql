@@ -1,0 +1,4 @@
+-- Escreva uma query para ordenar o nome das empresas de forma alfabética descendente e que retorne somente o código e o nome da primeira empresa.
+-- Escreve uma query para exibir todas as informações das cinco peças com os maiores preços.
+-- Escreva uma query para exibir o nome das empresas e preço das peças, começando a lista a partir do 3º item, e exibindo o preço das quatro peças mais caras.
+-- Escreva uma query para exibir a string "A peça mais cara é a: Piece , provida pela empresa Provider e custa Price reais.", essa query deve retornar somene uma única string, sendo que Price se refere ao maior preço.
