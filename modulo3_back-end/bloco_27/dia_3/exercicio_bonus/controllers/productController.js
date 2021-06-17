@@ -42,10 +42,8 @@ router.delete('/:id', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   const { name, brand } = req.body;
-
   try {
     const products = await ProductModel.update(req.params.id, name, brand);
-
     res.status(200).json(products);
   } catch (e) {
     res.status(500).send({ message: 'Algo deu errado' });
