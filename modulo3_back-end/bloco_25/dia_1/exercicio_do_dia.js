@@ -15,8 +15,7 @@ db.clientes.aggregate([{ $group: { _id: { "$endereco.uf": "ES" }, total: { $sum:
 db.clientes.aggregate([{ $group: { _id: "$endereco.uf", total: { $sum: 1 } } }]);
 
 // match limit os estados **todos os campos são SC, pode-se passar o valor para filtro.
-db.clientes.aggregate([{ $match: { "endereco.uf": "SC" }
- }, { $group: { _id: "SC", total: { $sum: 1 } } }]);
+db.clientes.aggregate([{ $match: { "endereco.uf": "SC" } }, { $group: { _id: "SC", total: { $sum: 1 } } }]);
 
 // Exercício 5: Agrupe os clientes por sexo . Retorne o total de clientes de cada sexo no campo total.
 db.clientes.aggregate([{ $group: { _id: "$sexo", total: { $sum: 1 } } }]);
@@ -26,12 +25,11 @@ db.clientes.aggregate([{ $group: { _id: { sexo: "$sexo", uf: "$endereco.uf" }, t
 
 // Exercício 7 : Utilizando a mesma agregação do exercício anterior, adicione um estágio de projeção para modificar os documentos de saída, de forma que se pareçam com o documento a seguir (não se importe com a ordem dos campos):
 
-
-{
-  "estado": "SP",
-  "sexo": "MASCULINO",
-  "total": 100
-}
+// {
+//   "estado": "SP",
+//   "sexo": "MASCULINO",
+//   "total": 100
+// }
 
 db.clientes.aggregate([{ $group: { _id: { "sexo": "$sexo", "uf": "$endereco.uf" }, "total": { $sum: 1 } } }, { $project: { "estado": "$_id.uf", "sexo": "$_id.sexo", "total": "$total" } }]);
 
@@ -200,10 +198,10 @@ db.vendas.aggregate([
 
 // Exercício 12 : Descubra quais as três ufs que mais compraram no ano de 2020 . Retorne os documentos no seguinte formato:
 
-{
-  "totalVendas": 10,
-  "uf": "SP"
-}
+// {
+//   "totalVendas": 10,
+//   "uf": "SP"
+// }
 
 db.vendas.aggregate([
   {
@@ -249,11 +247,11 @@ db.vendas.aggregate([
 
 // Exercício 13 : Encontre qual foi o total de vendas e a média de vendas de cada uf no ano de 2019. Ordene os resultados pelo nome da uf. Retorne os documentos no seguinte formato:
 
-{
-  "_id": "MG",
-  "mediaVendas": 9407.129225352113,
-  "totalVendas": 142
-}
+// {
+//   "_id": "MG",
+//   "mediaVendas": 9407.129225352113,
+//   "totalVendas": 142
+// }
 
 db.vendas.aggregate([
   {
