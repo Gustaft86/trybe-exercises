@@ -24,16 +24,24 @@ async function exclude(id) {
   const db = await connection();
   if(!ObjectId.isValid(id)) return null;
   const product = await getById(id);
-  await db.collection('products').deleteOne({ _id: ObjectId(id) });
+  const teste = await db.collection('products').deleteOne({ _id: ObjectId(id) });
+  console.log(teste);
   return product;
 }
 
-async function update(id) {
+async function update(id, name, brand) {
   const db = await connection();
   if(!ObjectId.isValid(id)) return null;
-  const product = await db.collection('products').updateOne({ _id: ObjectID(id) }, { $set: name, brand });
+
+  // console.log('linha 39', await db.collection('products').updateOne({ _id: ObjectId(id) }, { $set: { name, brand } }));
+  // console.log('linha 40', await db.collection('products').findOneAndUpdate({ _id: ObjectId(id) }, { $set: { name, brand } }, { returnOriginal: false }));
+
+  const product = await db.collection('products')
+    .updateOne({ _id: ObjectId(id) }, { $set: { name, brand } });
+  console.log(product);
   if(!product) return add(name, brand);
+  
   return product;
 }
 
-module.exports = { add, getAll, getById, update, exclude };
+module.exports = { add, getAll, getById, update, exclude }; 
