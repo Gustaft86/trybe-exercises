@@ -8,5 +8,12 @@ module.exports = (io) => io.on('connection', (socket) => {
   
   socket.on('disconnect', () => {
     socket.broadcast.emit('serverMessage', `Xiii! ${socket.id} acabou de se desconectar! :(`);
+    const count = io.engine.clientsCount;
+    // may or may not be similar to the count of Socket instances in the main namespace, depending on your usage
+    const count2 = io.of("/").sockets.size;
+    console.log('CONSOLE1', count);
+    console.log('CONSOLE2', count2);
   });
+
+
 });
