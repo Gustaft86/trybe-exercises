@@ -1,0 +1,63 @@
+# Supondo uma lista com 4 caracteres ao qual adicionaremos mais um no início:
+            *---*
+novo item   | a |
+            *---*
+              ↓
+            *---*---*---*---*
+original    | b | c | d |   |    posição na memória: 0x01
+            *---*---*---*---*
+                ⤻  ⤻  ⤻
+
+# Os elementos são deslocados para o próximo índice.
+
+            *---*---*---*---*
+original    | a | b | c | d |    posição na memória: 0x01
+            *---*---*---*---*
+
+
+# As regras de crescimento ainda se aplicam portanto pode ser que uma nova lista
+# seja criada, o elemento adicionado e os elementos copiados para a nova lista.
+# Ainda assim, o índice de todos os elementos posteriores a inserção
+# serão acrescidos em 1.
+
+# Supondo uma lista com 3 caracteres ao qual adicionaremos mais um na segunda posição, vulgo índice 1:
+(inserimos b na posição 1).
+
+                *---*
+novo item       | b |
+                *---*
+                  ↓
+            *---*---*---*---*
+original    | a | c | d |   |    posição na memória: 0x01
+            *---*---*---*---*
+                    ⤻  ⤻
+
+# O resultado final seria:
+            *---*---*---*---*
+original    | a | b | c | d |    posição na memória: 0x01
+            *---*---*---*---*
+
+
+# Supondo uma lista com 4 caracteres ao qual removeremos um elemento
+
+# Se removermos o ultimo elemento (índice 3), nada precisa ser modificado
+
+         *---*---*---*---*
+array    | a | b | c |   |    posição na memória: 0x01
+         *---*---*---*-⤹-*
+                        d
+
+# Porém se removermos o primeiro, ou qualquer outro índice,
+# todos os valores serão deslocados a esquerda:
+                 ⤺  ⤺  ⤺
+         *---*---*---*---*---*---*---*---*
+array    | a |   | c | d | e |   |   |   |    posição na memória: 0x01
+         *---*-⤹-*---*---*---*---*---*---*
+                b
+
+# À medida que itens são removidos, a estrutura diminui em tamanho:
+         *---*---*---*---*
+array    | a | c | d | e |    posição na memória: 0x01
+         *---*---*---*---*
+
+

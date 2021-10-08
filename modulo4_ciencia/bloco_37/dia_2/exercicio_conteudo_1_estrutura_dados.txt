@@ -1,0 +1,4 @@
+Exercício 1 Tipos abstratos de dados possuem uma única implementação bem documentada?
+Exercício 2 Listas( list ), dicionários( dict ) e conjuntos( set ), que já vêm no Python, são considerados tipos de dados? Caso negativo, justifique sua resposta.
+Voltando ao nosso problema de notas, precisamos de uma estrutura onde os elementos (dados) sejam de fácil acesso, facilmente percorrível e que mantenha as notas ordenadas.
+Acho que array pode ser uma boa escolha, mas por que?

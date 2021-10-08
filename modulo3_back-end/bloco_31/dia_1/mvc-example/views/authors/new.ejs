@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>MVC com Express</title>
+  </head>
+  <body>
+    <% if (message) { %>
+      <div><%= message %></div>
+    <% } %>
+    <form action="/authors" method="POST">
+      <label for="first_name">Nome:</label>
+      <input id="first_name" name="first_name" type="text" />
+      <label for="middle_name">Nome do meio:</label>
+      <input id="middle_name" name="middle_name" type="text" />
+      <label for="last_name">Sobrenome:</label>
+      <input id="last_name" name="last_name" type="text" />
+      <label for="teste">teste:</label>
+      <input id="teste" name="teste" type="text" />
+      <button type="submit">Criar novo autor!</button>
+    </form>
+    <a href="/authors">Voltar para página inicial</a>
+  </body>
+</html>
+
+<!-- Na view new.ejs , verificamos se a variável message contém um valor não nulo e, caso tenha,
+renderizamos uma div com a mensagem recebida. É por isso que no controller newAuthor precisamos passar
+{ message: null } como segundo parâmetro. Se não fizéssemos isso, ocorreria um erro ao tentar renderizar a view,
+pois a variável message não estaria definida. -->
